@@ -1,89 +1,148 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="IT Konsultan membantu bisnis Anda berkembang melalui solusi teknologi profesional, konsultasi IT, manajemen infrastruktur, dan pengembangan sistem.">
-  <meta name="keywords" content="IT Konsultan, Konsultasi Teknologi, Infrastruktur IT, Pengembangan Sistem, Solusi IT">
-  <meta name="author" content="IT Konsultan">
-  <title>IT Konsultan | Solusi Teknologi Profesional</title>
-  
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="assets/css/style.css">
-  <!-- Open Graph Meta -->
-  <meta property="og:title" content="IT Konsultan | Solusi Teknologi Profesional">
-  <meta property="og:description" content="Kami bantu bisnis Anda berkembang lewat solusi IT terpercaya.">
-  <meta property="og:image" content="https://example.com/og-image.jpg">
-  <meta property="og:url" content="https://example.com">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="iCore Network - Konsultan IT, instalasi CCTV, dan solusi jaringan profesional.">
+  <meta name="keywords" content="IT Consultant, CCTV, Networking, Jaringan, Infrastruktur IT, Konsultan IT Indonesia">
+  <title>iCore Network</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <style>
+    .swiper { width: 100%; height: 100%; }
+    .swiper-slide { display: flex; align-items: center; justify-content: center; font-size: 18px; }
+  </style>
 </head>
 <body class="bg-gray-100 text-gray-800">
-  <!-- Header -->
-  <header class="bg-blue-700 text-white p-6 shadow-md sticky top-0 z-50">
-    <div class="container mx-auto flex justify-between items-center">
-      <div class="text-2xl font-bold">ICorenetwork </div>
-      <nav>
-        <a href="#layanan" class="ml-4 hover:underline">Layanan</a>
-        <a href="#kontak" class="ml-4 hover:underline">Kontak</a>
-      </nav>
+
+  <!-- Hero Section -->
+  <section class="bg-blue-900 text-white text-center py-20 px-4">
+    <h1 class="text-4xl md:text-5xl font-bold mb-4">iCore Network</h1>
+    <p class="text-lg md:text-xl mb-6">Konsultan IT, Instalasi CCTV, dan Solusi Networking Profesional</p>
+    <a href="#services" class="bg-green-500 hover:bg-green-600 px-6 py-3 rounded-2xl text-lg font-semibold">Lihat Layanan</a>
+  </section>
+
+  <!-- Carousel -->
+  <section class="py-16 bg-white">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-10">Layanan Utama</h2>
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide bg-blue-100 p-8 rounded-2xl shadow">IT Consulting</div>
+          <div class="swiper-slide bg-green-100 p-8 rounded-2xl shadow">Instalasi CCTV</div>
+          <div class="swiper-slide bg-yellow-100 p-8 rounded-2xl shadow">Networking & Infrastruktur</div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
     </div>
-  </header>
+  </section>
 
-  <!-- Konten Utama -->
-  <main>
-    <!-- Hero Section -->
-    <section class="bg-blue-100 py-20">
-      <div class="container mx-auto text-center">
-        <h1 class="text-4xl font-bold mb-4">Solusi Teknologi Profesional</h1>
-        <p class="text-lg">Kami membantu bisnis Anda berkembang melalui solusi IT yang tepat guna dan andal.</p>
-      </div>
-    </section>
-
-    <!-- Layanan -->
-    <section id="layanan" class="py-16 container mx-auto px-4">
-      <h2 class="text-3xl font-semibold text-center mb-10">Layanan Kami</h2>
+  <!-- Services -->
+  <section id="services" class="bg-gray-50 py-16 px-4">
+    <div class="max-w-6xl mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-10">Layanan Kami</h2>
       <div class="grid md:grid-cols-3 gap-8">
-        <article class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
-          <h3 class="text-xl font-bold mb-2">Konsultasi IT</h3>
-          <p>Kami bantu Anda merancang strategi IT yang efisien dan sesuai kebutuhan bisnis.</p>
-        </article>
-        <article class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
-          <h3 class="text-xl font-bold mb-2">Manajemen Infrastruktur</h3>
-          <p>Mulai dari server, jaringan, hingga keamanan—semua kami tangani dengan profesional.</p>
-        </article>
-        <article class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
-          <h3 class="text-xl font-bold mb-2">Pengembangan Sistem</h3>
-          <p>Bangun sistem internal atau aplikasi kustom sesuai alur kerja bisnis Anda.</p>
-        </article>
+        <div class="bg-white p-6 rounded-2xl shadow">
+          <h3 class="text-xl font-bold mb-2">IT Consulting</h3>
+          <p>Konsultasi, audit, dan pengembangan sistem IT sesuai kebutuhan bisnis Anda.</p>
+        </div>
+        <div class="bg-white p-6 rounded-2xl shadow">
+          <h3 class="text-xl font-bold mb-2">CCTV</h3>
+          <p>Paket instalasi CCTV dengan monitoring jarak jauh untuk keamanan maksimal.</p>
+        </div>
+        <div class="bg-white p-6 rounded-2xl shadow">
+          <h3 class="text-xl font-bold mb-2">Networking</h3>
+          <p>Desain & implementasi jaringan LAN, WAN, dan infrastruktur IT modern.</p>
+        </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Kontak -->
-    <section id="kontak" class="bg-white py-16">
-      <div class="container mx-auto text-center">
-        <h2 class="text-3xl font-semibold mb-6">Hubungi Kami</h2>
-        <p class="mb-8">Silakan isi formulir di bawah ini untuk menghubungi kami langsung.</p>
-        <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="max-w-lg mx-auto text-left space-y-4">
-          <div>
-            <label for="nama" class="block mb-1">Nama</label>
-            <input id="nama" type="text" name="nama" placeholder="Nama Anda" required class="w-full p-3 border rounded" />
+  <!-- Testimoni -->
+  <section class="bg-white py-16 px-4">
+    <div class="max-w-6xl mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-10">Testimoni Klien</h2>
+      <div class="swiper testimonialSwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide p-6 bg-gray-100 rounded-2xl shadow">
+            "Pelayanan profesional, instalasi CCTV cepat dan rapi!" – PT. ABC
           </div>
-          <div>
-            <label for="email" class="block mb-1">Email</label>
-            <input id="email" type="email" name="email" placeholder="Email Anda" required class="w-full p-3 border rounded" />
+          <div class="swiper-slide p-6 bg-gray-100 rounded-2xl shadow">
+            "Tim iCore membantu optimasi infrastruktur IT kami." – CV. XYZ
           </div>
-          <div>
-            <label for="pesan" class="block mb-1">Pesan</label>
-            <textarea id="pesan" name="pesan" placeholder="Pesan Anda" rows="5" required class="w-full p-3 border rounded"></textarea>
-          </div>
-          <button type="submit" class="bg-blue-700 text-white px-6 py-2 rounded hover:bg-blue-800">Kirim</button>
-        </form>
+        </div>
+        <div class="swiper-pagination"></div>
       </div>
-    </section>
-  </main>
+    </div>
+  </section>
+
+  <!-- Portofolio -->
+  <section class="bg-gray-50 py-16 px-4">
+    <div class="max-w-6xl mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-10">Portofolio</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-white rounded-2xl shadow overflow-hidden">
+          <img src="https://via.placeholder.com/400x250" alt="Proyek IT" class="w-full">
+          <div class="p-4">Proyek Jaringan Perusahaan</div>
+        </div>
+        <div class="bg-white rounded-2xl shadow overflow-hidden">
+          <img src="https://via.placeholder.com/400x250" alt="Proyek CCTV" class="w-full">
+          <div class="p-4">Instalasi CCTV Gedung</div>
+        </div>
+        <div class="bg-white rounded-2xl shadow overflow-hidden">
+          <img src="https://via.placeholder.com/400x250" alt="Proyek Support IT" class="w-full">
+          <div class="p-4">IT Support & Maintenance</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="bg-white py-16 px-4">
+    <div class="max-w-6xl mx-auto text-center">
+      <h3 class="text-3xl font-bold mb-6">Hubungi Kami</h3>
+      <p class="text-gray-600 mb-8">Silakan hubungi kami untuk konsultasi atau layanan lebih lanjut.</p>
+
+      <!-- WhatsApp -->
+      <a href="https://wa.me/6285117178976" target="_blank"
+        class="inline-flex items-center bg-green-500 text-white px-6 py-3 rounded-2xl shadow hover:bg-green-600 mb-4">
+        WhatsApp Kami
+      </a>
+      <br>
+
+      <!-- Email (protected) -->
+      <button onclick="showEmail()" 
+        class="inline-flex items-center bg-blue-500 text-white px-6 py-3 rounded-2xl shadow hover:bg-blue-600">
+        📧 Tampilkan Email
+      </button>
+      <p id="email" class="mt-4 text-lg font-semibold text-gray-800"></p>
+    </div>
+  </section>
 
   <!-- Footer -->
-  <footer class="bg-gray-800 text-white text-center p-4">
-    &copy; 2025 IT Konsultan. All rights reserved.
+  <footer class="bg-blue-900 text-white text-center py-6">
+    <p>&copy; 2025 iCore Network. All rights reserved.</p>
   </footer>
+
+  <!-- Script -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script>
+    var swiper1 = new Swiper(".mySwiper", {
+      pagination: { el: ".swiper-pagination", clickable: true },
+      autoplay: { delay: 2500, disableOnInteraction: false }
+    });
+    var swiper2 = new Swiper(".testimonialSwiper", {
+      pagination: { el: ".swiper-pagination", clickable: true },
+      autoplay: { delay: 4000, disableOnInteraction: false }
+    });
+
+    function showEmail() {
+      const user = "support";              // ganti sesuai kebutuhan
+      const domain = "icorenetwork.biz.id"; // ganti sesuai domain email
+      const email = user + "@" + domain;
+      const el = document.getElementById("email");
+      el.innerHTML = `<a href="mailto:${email}" class="text-blue-600 underline">${email}</a>`;
+    }
+  </script>
 </body>
 </html>
