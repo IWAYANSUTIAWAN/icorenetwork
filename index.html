@@ -22,6 +22,12 @@
       max-width: 100%;
       height: auto;
     }
+    .service-card {
+      transition: transform 0.2s ease-in-out;
+    }
+    .service-card:hover {
+      transform: translateY(-5px);
+    }
     footer {
       background: #343a40;
       color: #fff;
@@ -35,7 +41,7 @@
 </head>
 <body>
 
-  <!-- HEADER LAMA -->
+  <!-- HEADER -->
   <header class="bg-dark text-white p-3">
     <div class="container d-flex justify-content-between align-items-center">
       <h1 class="h4 mb-0">iCore Network</h1>
@@ -97,31 +103,56 @@
 
   <!-- SERVICES -->
   <section id="services" class="container my-5">
-    <h2 class="mb-4">Our Services</h2>
+    <h2 class="mb-4 text-center">Our Services</h2>
     <div class="row">
       <div class="col-md-4">
-        <div class="card shadow-sm mb-3">
-          <div class="card-body">
+        <div class="card service-card shadow-sm mb-3">
+          <div class="card-body text-center">
             <h5 class="card-title">IT Consulting</h5>
             <p class="card-text">Solusi teknologi untuk bisnis Anda, mulai dari infrastruktur, cloud, hingga keamanan.</p>
           </div>
         </div>
       </div>
       <div class="col-md-4">
-        <div class="card shadow-sm mb-3">
-          <div class="card-body">
+        <div class="card service-card shadow-sm mb-3">
+          <div class="card-body text-center">
             <h5 class="card-title">CCTV & Security</h5>
             <p class="card-text">Instalasi CCTV, monitoring, dan solusi keamanan digital untuk rumah dan kantor.</p>
           </div>
         </div>
       </div>
       <div class="col-md-4">
-        <div class="card shadow-sm mb-3">
-          <div class="card-body">
+        <div class="card service-card shadow-sm mb-3">
+          <div class="card-body text-center">
             <h5 class="card-title">Training & Courses</h5>
             <p class="card-text">Pelatihan IT dari dasar hingga advanced, siap meningkatkan skill tim Anda.</p>
           </div>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CCTV SECTION -->
+  <section id="cctv" class="container my-5">
+    <h2 class="mb-4 text-center">CCTV & Monitoring</h2>
+    <p class="text-center">Kami menyediakan solusi CCTV berkualitas tinggi dengan monitoring real-time yang dapat diakses dari mana saja.</p>
+    <div class="text-center">
+      <img src="images/cctv-sample.jpg" class="img-fluid rounded" alt="CCTV Sample">
+    </div>
+  </section>
+
+  <!-- COURSES SECTION -->
+  <section id="courses" class="container my-5">
+    <h2 class="mb-4 text-center">Courses & Training</h2>
+    <p class="text-center">Belajar bersama iCore Network. Materi dari dasar hingga advanced dengan instruktur berpengalaman.</p>
+    <div class="row justify-content-center">
+      <div class="col-md-4">
+        <ul class="list-group shadow-sm">
+          <li class="list-group-item">Basic Networking</li>
+          <li class="list-group-item">Linux Server Administration</li>
+          <li class="list-group-item">Cybersecurity Fundamentals</li>
+          <li class="list-group-item">Cloud Computing</li>
+        </ul>
       </div>
     </div>
   </section>
