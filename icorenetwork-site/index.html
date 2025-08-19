@@ -3,27 +3,23 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>iCore Network</title>
+  <title>ICORE Network - IT Consultant</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <style>
     body {
       font-family: Arial, sans-serif;
     }
-    .banner-slot {
-      min-height: 250px;
-      background: #f8f9fa;
-      border: 2px dashed #ccc;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: column;
+    .navbar {
+      margin-bottom: 20px;
     }
-    .banner-slot img {
-      max-width: 100%;
-      height: auto;
+    .carousel-inner img {
+      border-radius: 10px;
+    }
+    .banner-slot {
+      min-height: 300px;
     }
     .service-card {
-      transition: transform 0.2s ease-in-out;
+      transition: transform 0.3s;
     }
     .service-card:hover {
       transform: translateY(-5px);
@@ -35,30 +31,37 @@
     }
     footer a {
       color: #0dcaf0;
-      text-decoration: none;
+    }
+
+    /* Responsif: Banner turun ke bawah di layar kecil */
+    @media (max-width: 767.98px) {
+      .banner-slot {
+        margin-top: 20px;
+      }
     }
   </style>
 </head>
 <body>
 
   <!-- HEADER -->
-  <header class="bg-dark text-white p-3">
-    <div class="container d-flex justify-content-between align-items-center">
-      <h1 class="h4 mb-0">iCore Network</h1>
-      <nav>
-        <a href="#" class="text-white mx-2">Home</a>
-        <a href="#services" class="text-white mx-2">Services</a>
-        <a href="#cctv" class="text-white mx-2">CCTV</a>
-        <a href="#courses" class="text-white mx-2">Courses</a>
-        <a href="#contact" class="text-white mx-2">Contact</a>
-      </nav>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="https://icorenetwork.biz.id">ICORE Network</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
     </div>
-  </header>
+  </nav>
 
-  <!-- CAROUSEL + BANNER -->
-  <section class="container mt-4">
+  <!-- HERO: CAROUSEL + BANNER -->
+  <header class="container mb-5">
     <div class="row">
-      <!-- Carousel di kiri -->
+      <!-- Carousel kiri -->
       <div class="col-md-8">
         <div id="carouselHeader" class="carousel slide" data-ride="carousel">
           <ol class="carousel-indicators">
@@ -66,7 +69,6 @@
             <li data-target="#carouselHeader" data-slide-to="1"></li>
             <li data-target="#carouselHeader" data-slide-to="2"></li>
           </ol>
-
           <div class="carousel-inner">
             <div class="carousel-item active">
               <img src="images/slide1.jpg" class="d-block w-100" alt="Slide 1">
@@ -78,7 +80,6 @@
               <img src="images/slide3.jpg" class="d-block w-100" alt="Slide 3">
             </div>
           </div>
-
           <a class="carousel-control-prev" href="#carouselHeader" role="button" data-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="sr-only">Previous</span>
@@ -90,85 +91,61 @@
         </div>
       </div>
 
-      <!-- Banner di kanan -->
+      <!-- Banner kanan -->
       <div class="col-md-4">
-        <div class="banner-slot rounded text-center">
-          <p><strong>Space Iklan</strong></p>
+        <div class="banner-slot p-3 bg-light border rounded text-center">
+          <h5>Space Iklan</h5>
           <p>Pasang banner Anda di sini<br>(contoh: jual domain, promo, dll)</p>
-          <img src="images/banner-placeholder.jpg" alt="Banner Placeholder">
+          <img src="images/banner-placeholder.jpg" class="img-fluid rounded" alt="Banner Placeholder">
         </div>
       </div>
     </div>
-  </section>
+  </header>
 
   <!-- SERVICES -->
   <section id="services" class="container my-5">
-    <h2 class="mb-4 text-center">Our Services</h2>
+    <h2 class="text-center mb-4">Our Services</h2>
     <div class="row">
       <div class="col-md-4">
-        <div class="card service-card shadow-sm mb-3">
+        <div class="card service-card shadow-sm">
           <div class="card-body text-center">
-            <h5 class="card-title">IT Consulting</h5>
-            <p class="card-text">Solusi teknologi untuk bisnis Anda, mulai dari infrastruktur, cloud, hingga keamanan.</p>
+            <h5 class="card-title">IT Consultant</h5>
+            <p class="card-text">Solusi IT profesional untuk bisnis Anda.</p>
           </div>
         </div>
       </div>
       <div class="col-md-4">
-        <div class="card service-card shadow-sm mb-3">
+        <div class="card service-card shadow-sm">
           <div class="card-body text-center">
-            <h5 class="card-title">CCTV & Security</h5>
-            <p class="card-text">Instalasi CCTV, monitoring, dan solusi keamanan digital untuk rumah dan kantor.</p>
+            <h5 class="card-title">CCTV & Networking</h5>
+            <p class="card-text">Instalasi dan pemeliharaan CCTV & jaringan.</p>
           </div>
         </div>
       </div>
       <div class="col-md-4">
-        <div class="card service-card shadow-sm mb-3">
+        <div class="card service-card shadow-sm">
           <div class="card-body text-center">
-            <h5 class="card-title">Training & Courses</h5>
-            <p class="card-text">Pelatihan IT dari dasar hingga advanced, siap meningkatkan skill tim Anda.</p>
+            <h5 class="card-title">Training & Support</h5>
+            <p class="card-text">Pelatihan IT untuk tim Anda.</p>
           </div>
         </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CCTV SECTION -->
-  <section id="cctv" class="container my-5">
-    <h2 class="mb-4 text-center">CCTV & Monitoring</h2>
-    <p class="text-center">Kami menyediakan solusi CCTV berkualitas tinggi dengan monitoring real-time yang dapat diakses dari mana saja.</p>
-    <div class="text-center">
-      <img src="images/cctv-sample.jpg" class="img-fluid rounded" alt="CCTV Sample">
-    </div>
-  </section>
-
-  <!-- COURSES SECTION -->
-  <section id="courses" class="container my-5">
-    <h2 class="mb-4 text-center">Courses & Training</h2>
-    <p class="text-center">Belajar bersama iCore Network. Materi dari dasar hingga advanced dengan instruktur berpengalaman.</p>
-    <div class="row justify-content-center">
-      <div class="col-md-4">
-        <ul class="list-group shadow-sm">
-          <li class="list-group-item">Basic Networking</li>
-          <li class="list-group-item">Linux Server Administration</li>
-          <li class="list-group-item">Cybersecurity Fundamentals</li>
-          <li class="list-group-item">Cloud Computing</li>
-        </ul>
       </div>
     </div>
   </section>
 
   <!-- FOOTER -->
-  <footer id="contact">
-    <div class="container text-center">
-      <p>© 2025 iCore Network. All rights reserved.</p>
+  <footer id="contact" class="text-center">
+    <div class="container">
+      <p>Hubungi kami:</p>
       <p>
-        <a href="https://wa.me/6281234567890" target="_blank">💬 WhatsApp</a> | 
-        <a href="mailto:info@icorenetwork.com">📧 Email</a>
+        📱 <a href="https://wa.me/6281234567890" target="_blank">WhatsApp</a> |
+        🌐 <a href="https://icorenetwork.biz.id" target="_blank">icorenetwork.biz.id</a> |
+        📧 <a href="mailto:support@icorenetwork.biz.id">support@icorenetwork.biz.id</a>
       </p>
+      <p class="mb-0">&copy; 2025 ICORE Network. All Rights Reserved.</p>
     </div>
   </footer>
 
-  <!-- Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
